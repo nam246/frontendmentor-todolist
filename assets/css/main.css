@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    height: 200px;
+}
+
+header {
+    padding: 12px 24px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+main {
+    height: 100vh;
+    background-image: url('../images/bg-mobile-dark.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: fit-content;
+    padding-bottom: 64px;
+    position: relative;
+}
+
+.add-task-form {
+    width: 100%;
+    padding: 12px 24px;
+    
+}
+
+.add-task-form label {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.add-task-form label input {
+    width: 100%;
+    background-color: hsl(235, 21%, 11%);
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+.task-list {
+    padding: 12px 24px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    position: absolute;
+}
+
+.task-list label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: hsl(235, 24%, 19%);
+    padding: 12px 24px;
+    left: 0;
+    right: 0;
+}
+
+.task-list label input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    width: 100%;
+    background: none;
+    color: #fff;
+    cursor: default;
+}
+
+.task-list .delete-btn {
+    display: block;
+    cursor: pointer;
+    color: #fff;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+footer {
+    background-color: hsl(235, 21%, 11%);
+    height: 71.3vh;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.attribution {
+    text-align: center;
+}
